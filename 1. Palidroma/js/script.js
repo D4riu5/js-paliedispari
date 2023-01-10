@@ -1,14 +1,13 @@
 // ---------------Solution 1 (using while)---------------
 
 function isPalindrome(input){
- // Bonus: remove spaces using split(" ") to first separate every string into an array adding one space between letters, then using join("") joins the array into a string getting rid of the spaces.
- input = input.replace(/\s/g,''); // remove spaces from input
-
+ // Bonus: remove spaces using input.replace(/\s/g,'');
+ input = input.replace(/\s/g,'');
 //  counters
   let start = 0;
   let end = input.length -1;
  
-  // using start < end, it checks for characters until it reaches the middle: example racecar, start at 0 is r end at input.lenght -1 is r, if start gets bigger than end, it wont get into the while. so after start gets to the second letter c that is in position 4, end should be at first letter c in position 2 so 4 is not smaller than 2, which means the condition for the while is not true(this is done to stop the while).
+  // using the word RACECAR for example, after start gets to the second letter c that is in position 4, end should be at first letter c in position 2 so 4 is not smaller than 2, which means the condition for the while is not true (this is done to stop the while).
   while (start < end) {
     if (input[start] !== input[end]){
       return false;
