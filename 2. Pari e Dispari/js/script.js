@@ -45,11 +45,14 @@ start.addEventListener ('click',
       
       if (isEven(sum) && winCondition == 'Pari'){
         showResult.innerHTML = "User Wins";
+        showResult.style.color = "limeGreen";
       } else if(!isEven(sum) && winCondition == 'Dispari'){
         showResult.innerHTML = "User Wins";
+        showResult.style.color = "limeGreen";
       } 
       else{
         showResult.innerHTML = "Computer Wins";
+        showResult.style.color = "red";
       }
 
     }
