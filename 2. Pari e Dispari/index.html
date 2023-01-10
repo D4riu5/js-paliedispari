@@ -12,7 +12,66 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="bg-dark text-white">
-        
+        <main>
+            <h1 class="text-center">
+                Pari o dispari?
+            </h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 offset-3 bg-primary text-white p-2 rounded">
+                        <h4 class="mb-4 text-start"></h4>
+                        <div class="">
+                            <div>
+                                <select class="full-width-select p-1 mb-2" name="" id="evenOrUneven">
+                                    <option value="placeholder" disabled selected>Pari o dispari?</option>
+                                    <option value="Pari">Pari</option>
+                                    <option value="Dispari">Dispari</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select class="full-width-select p-1" name="" id="UserSelection">
+                                    <option value="placeholder" disabled selected>Seleziona il numero da 1 a 5</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4 mb-2">
+                            <button type="button" class="start">Start Game</button>
+                            <button type="button" class="reset">Reset</button>
+                        </div>
+                    </div>
+
+                    <div class="col-4 bg-secondary p-2 mt-2 d-flex align-items-center">
+                        <img class="m-3" src="img/user.png" alt="User">
+                        <div id="user">
+    
+                        </div>
+                    </div>
+                    <div class="col-4 bg-secondary p-2 mt-2 d-flex align-items-center justify-content-center">
+                        <h2> 
+                            VERSUS
+                        </h2>
+                    </div>
+                    <div class="col-4 bg-secondary p-2  mt-2 d-flex justify-content-end align-items-center">
+                        <div id="computer">
+    
+                        </div>
+                        <img class="m-3" src="img/computer.png" alt="User">
+                    </div>
+
+                    <div class="col-6 offset-3 p-2 mt-4 text-white text-center">
+                        <h2 id="result"></h2>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+
         <script type="text/javascript" src="js/script.js"></script>
     </body>
     </html>
